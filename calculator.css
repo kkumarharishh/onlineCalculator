@@ -1,0 +1,36 @@
+<!-- for styling -->
+	<style>
+		.title{
+		margin-bottom: 20px;
+		text-align:center;
+		width: 210px;
+		color:green;
+		border: solid black 2px;
+		}
+
+		input[type="button"]
+		{
+		background-color:rgb(66, 80, 66);
+		color: rgb(245, 241, 241);
+		border: solid rgb(24, 23, 23) 2px;
+		width:100%
+		}
+        .btn:active {
+            transform: scale(0.90);  
+        }
+
+        #special{
+            background-color:rgb(172, 78, 16);
+        }
+
+        #special2{
+            background-color:rgb(53, 52, 51);
+        }
+
+		input[type="text"]
+		{
+		background-color:white;
+		border: solid rgb(14, 14, 14) 2px;
+		width:100%
+		}
+	</style>

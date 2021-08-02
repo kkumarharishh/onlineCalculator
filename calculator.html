@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="calculator.css">
+
+</head>
+<!-- creating table -->
+<body>
+	<div class = title >Online Calculator</div>
+	<table border="1">
+		<tr>
+			<td colspan="3"><input type="text" id="result"/></td>
+			<!-- clr() will call clr function to clear all value -->
+			<td><input type="button" class="btn" id="special" value="c" onclick="clr()"/> </td>
+		</tr>
+		<tr>
+			<!-- creating buttons and assigning values -->
+			<!-- dis() will call disp function to display value -->
+			<td><input type="button" class="btn" value="1" onclick="disp('1')"/> </td>
+			<td><input type="button" class="btn" value="2" onclick="disp('2')"/> </td>
+			<td><input type="button" class="btn" value="3" onclick="disp('3')"/> </td>
+			<td><input type="button" class="btn" id="special2" value="/" onclick="disp('/')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn" value="4" onclick="disp('4')"/> </td>
+			<td><input type="button" class="btn" value="5" onclick="disp('5')"/> </td>
+			<td><input type="button" class="btn" value="6" onclick="disp('6')"/> </td>
+			<td><input type="button" class="btn" id="special2" value="-" onclick="disp('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn" value="7" onclick="disp('7')"/> </td>
+			<td><input type="button" class="btn" value="8" onclick="disp('8')"/> </td>
+			<td><input type="button" class="btn" value="9" onclick="disp('9')"/> </td>
+			<td><input type="button" class="btn" id="special2" value="+" onclick="disp('+')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btn" value="." onclick="disp('.')"/> </td>
+			<td><input type="button" class="btn" value="0" onclick="disp('0')"/> </td>
+			<!-- solve() will call function solve to evaluate value -->
+			<td><input type="button" class="btn" id="special" value="=" onclick="solve()"/> </td>
+			<td><input type="button" class="btn" id="special2" value="*" onclick="disp('*')"/> </td>
+		</tr>
+	</table>
+    <script src="calculator.js"></script>
+</body>
+</html>
